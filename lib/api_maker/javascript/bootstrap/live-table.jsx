@@ -103,7 +103,7 @@ export default class LiveTable extends React.Component {
           <Card className="mb-4">
             <form onSubmit={(e) => this.onFilterFormSubmit(e)} ref="filterForm">
               {filterContent({qParams})}
-              <input className="btn btn-primary" label={filterSubmitLabel} type="submit" />
+              <input className="btn btn-primary" type="submit" value={filterSubmitLabel} />
             </form>
           </Card>
         }
